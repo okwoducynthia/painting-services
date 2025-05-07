@@ -553,14 +553,16 @@
 
 /* ==SEMI FOOTER SECTION STARTS HERE== */
 .semi-footer-section {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.61)), url(Images/footer-bg.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.61)), url(Images/footer-bg.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
 .semi-footer-section div{
   justify-items: center;
-  padding-top: 200px;
+  position: relative;
+  top: 30%;
+  bottom: 70%;
 }
 .semi-footer-section div span i{
   color: var(--white-color);
@@ -772,6 +774,9 @@
     width: 90%;
     margin-bottom: 20px;
     height: 60vh;
+  }
+  .semi-footer-section div h1 {
+    font-size: 30px;
   }
 }
 
@@ -1005,7 +1010,10 @@
   }
   .semi-footer-section {
     height: 50vh;
-    overflow: hidden;
+  }
+  .semi-footer-section div {
+    position: relative;
+    top: 15%
   }
   .semi-footer-section div h1{
     font-size: 15px;
