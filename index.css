@@ -1009,7 +1009,7 @@
     height: 50vh;
   }
   .semi-footer-section {
-    height: 50vh;
+    height: 50vh; 
   }
   .semi-footer-section div {
     position: relative;
@@ -1026,6 +1026,6 @@
     padding: 12px 20px;
   }
   .footer-section {
-    height: 75vh;
+    height: 45vh;
   }
 }
