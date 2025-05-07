@@ -560,9 +560,7 @@
 }
 .semi-footer-section div{
   justify-items: center;
-  position:relative;
-  top: 30%;
-  bottom: 50%;
+  padding-top: 200px;
 }
 .semi-footer-section div span i{
   color: var(--white-color);
@@ -958,7 +956,7 @@
   .painting-images div {
     margin-right: 10px;
     margin-top: -13px;
-    height: 40vh;
+    height: 45vh;
   }
   .images-heading {
     flex-direction: column;
@@ -1007,16 +1005,19 @@
   }
   .semi-footer-section {
     height: 50vh;
-    background-attachment: fixed;
+    overflow: hidden;
   }
   .semi-footer-section div h1{
     font-size: 15px;
   }
   .semi-footer-section div h1 {
-    font-size: 30px;
-    width: 90%;
+    font-size: 25px;
+    width: 80%;
+  }
+  .semi-footer-section div button {
+    padding: 12px 20px;
   }
   .footer-section {
-    height: 80vh;
+    height: 75vh;
   }
 }
