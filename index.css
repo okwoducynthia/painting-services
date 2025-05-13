@@ -361,13 +361,13 @@
   height: 70vh;
   border-radius: 10px;
   justify-items: center;
+  text-align: center;
   border: 1px solid rgba(128, 128, 128, 0.281);
   margin-bottom: 6.4rem;
 }
 .painting-images div img {
   width: 80%;
   border-radius: 12px;
-  margin-left: 35px;
   margin-top: -50px;
   margin-bottom: 50px;
 }
@@ -970,7 +970,7 @@
   .painting-images div {
     margin-right: 10px;
     margin-top: -13px;
-    height: 45vh;
+    height: 90vh;
   }
   .images-heading {
     flex-direction: column;
@@ -990,19 +990,19 @@
     margin-left: 40px;
   }
   .images-displayed div img:nth-of-type(1) {
-    height: 35vh
+    height: 45vh;
   }
   .images-displayed div img:nth-of-type(2) {
-    height: 35vh
+    height: 45vh
   }
   .images-displayed div img:nth-of-type(3) {
-    height: 35vh
+    height: 45vh
   }
   .images-displayed div img:nth-of-type(4) {
-    height: 35vh
+    height: 45vh
   }
   .images-displayed div img:nth-of-type(5) {
-    height: 35vh
+    height: 45vh
   }
   .customer-section {
     padding-bottom: 60px;
@@ -1015,11 +1015,10 @@
   }
   .customer-team div {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
   }
   .semi-footer-section {
-   height: 50vh;
-   background-size: 110%;
+   height: 70vh;
   }
   .semi-footer-section div {
     padding-top: 5rem;
@@ -1035,3 +1034,17 @@
     height: 45vh;
   }
 }
+
+@media (max-width: 390px) {
+  .painting-images div {
+    height: 50vh;
+  }
+  .customer-team div {
+    height: 55vh;
+  }
+  .semi-footer-section {
+    height: 55vh;
+  }
+}
+
+
