@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /* ===CSS VARIABLES====== */
 :root {
   /* ==COLORS== */
@@ -343,6 +344,9 @@
   font-family: var(--encode-san-font);
   color: var(--blue-color);
   margin-bottom: 5.7rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .painting-images {
   display: flex;
@@ -556,13 +560,12 @@
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.61)), url(Images/footer-bg.jpg);
   height: 100vh;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .semi-footer-section div{
   justify-items: center;
-  position: relative;
-  top: 30%;
-  bottom: 70%;
+  padding-top: 12rem;
 }
 .semi-footer-section div span i{
   color: var(--white-color);
@@ -746,6 +749,9 @@
   .about-us-icons div h3 {
     font-size: 14px;
   }
+  .painting-services h1 {
+    width: 90%;
+  }
   .painting-images {
     flex-direction: column;
   }
@@ -816,9 +822,11 @@
     width: 80%;
   }
   .services-offers span {
-    position: relative;
-    right: 10rem;
-    margin-top: 20px;
+    margin-bottom: 0.5rem;
+    margin-right: 17rem;
+  }
+  .services-offers div p {
+    margin-bottom: 1rem;
   }
   .about-us-section {
     flex-direction: column;
@@ -904,14 +912,15 @@
     width: 90%;
     margin-left: 0;
   }
+  .hero-paragraph{
+    margin-bottom: 3rem;
+  }
   .hero-container div img {
     width: 90%;
     margin-left: 18px;
   }
   .services-offers span {
-    position: relative;
-    right: 7rem;
-    margin-top: -10px;
+    margin-left: 6rem;
   }
   .services-offers div p {
     margin-bottom: 30px;
@@ -968,7 +977,7 @@
     margin-top: -25px;
   }
   .images-heading div h1 {
-    font-size: 29px;
+    font-size: 25px;
     width: 100%;
     margin-bottom: 25px;
   }
@@ -1009,14 +1018,10 @@
     height: 50vh;
   }
   .semi-footer-section {
-    height: 50vh; 
+   height: 50vh;
   }
   .semi-footer-section div {
-    position: relative;
-    top: 15%
-  }
-  .semi-footer-section div h1{
-    font-size: 15px;
+    padding-top: 5rem;
   }
   .semi-footer-section div h1 {
     font-size: 25px;
