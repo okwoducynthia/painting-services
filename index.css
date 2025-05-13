@@ -1019,6 +1019,7 @@
   }
   .semi-footer-section {
    height: 50vh;
+   background-size: 110%;
   }
   .semi-footer-section div {
     padding-top: 5rem;
