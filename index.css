@@ -995,7 +995,7 @@
     font-size: 24px;
   }
   .painting-images div {
-    margin-right: 10px;
+    margin-right: 50px;
     margin-top: -13px;
     height: 50vh;
   }
@@ -1010,11 +1010,11 @@
   }
   .images-heading div button {
     margin-bottom: 50px;
-    margin-right: 120px;
+    margin-left: -30px;
     padding: 14px 20px;
   }
   .images-displayed {
-    margin-left: 40px;
+    margin-left: 70px;
   }
   .images-displayed div img:nth-of-type(1) {
     height: 45vh;
