@@ -96,7 +96,7 @@
   width: 40%;
 } */
 .hero-container div img {
-  width: 130vh;
+  width: 45rem;
   margin-top: 6.3rem;
 }
 .hero-paragraph {
@@ -171,7 +171,6 @@
 /* ==SERVICES SECTION STARTS HERE== */
 .services-section {
   height: 90vh;
-  /* background-color: var(--blue-color); */
   background-image: url(Images/blue\ background.jpg);
   background-size: cover;
   background-position: center;
