@@ -75,6 +75,9 @@
 .narbar-icon {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--pink-color);
   display: none;
 }
@@ -92,9 +95,6 @@
 .star-rating {
   display: flex;
 }
-/* .hero-container div {
-  width: 40%;
-} */
 .hero-container div img {
   width: 45rem;
   margin-top: 6.3rem;
@@ -495,10 +495,9 @@
 /* ==CUSTOMERS SATISFACTION SECTION STARTS HERE== */
 .customer-section {
   background-color: var(--light-blue-color);
-  padding-top: 6.3rem;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 7.2rem;
+  justify-items: center;
+  align-content: center;
+  height: 100vh;
   color: var(--black-color);
 }
 .customer-heading {
@@ -557,15 +556,18 @@
 /* ==SEMI FOOTER SECTION STARTS HERE== */
 .semi-footer-section {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.61)), url(Images/footer-bg.jpg);
-  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .semi-footer-section div{
-  justify-items: center;
-  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .semi-footer-section div span i{
   color: var(--white-color);
   border: 3px solid white;
@@ -582,6 +584,8 @@
   font-family: var(--encode-san-font);
   color: var(--white-color);
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -656,7 +660,7 @@
     margin-top: 50px;
   }
   .hero-paragraph h1 {
-    width: 50vh;
+    width: 80%;
   }
   .hero-container div img {
     width: 100%;
@@ -687,16 +691,13 @@
   .images-displayed div img:nth-of-type(3) {
     height: 55vh;
   }
-  .customer-team div {
-    height: 70vh;
-  }
   .services-offers {
    padding-left: 40px;
    padding-right: 40px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .navlinks-display {
     display: none;
   }
@@ -706,100 +707,23 @@
   .narbar-icon {
     display: block;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    left: 110px;
-  }
-  .hero-paragraph {
-    margin-top: 80px;
-  }
-  .hero-paragraph p {
-    width: 90%;
-  }
-  .hero-icon-contact {
-    flex-direction: column;
-  }
-  .hero-container div img {
-    width: 110%;
-    margin-left: -70px;
-    margin-top: -50px;
+    align-items: center;
   }
   .hero-paragraph h1 {
     font-size: 40px;
-  }
-  .services-first-heading h1 {
-    width: 90%;
-  }
-  .about-us-section div img:nth-of-type(1) {
-    width: 80%;
-  }
-  .about-us-section div img:nth-of-type(2) {
-    position: relative;
-    left: 9.4rem;
-    width: 70%;
-  }
-  .about-us-section div h1 {
-    font-size: 28px;
-  }
-  .about-us-icons div h3 {
-    font-size: 14px;
-  }
-  .painting-services h1 {
-    width: 90%;
-  }
-  .painting-images {
-    flex-direction: column;
-  }
-  .painting-images div {
-    width: 80%;
-    height: 75vh;
-  }
-  .painting-images div:nth-of-type(2) {
-    margin-top: -5px;
-  }
-  .painting-images div:nth-of-type(3) {
-    margin-top: 10px;
-  }
-  .images-heading div h1 {
-    font-size: 32px;
-    width: 80%;
-  }
-  .images-heading div button {
-    white-space: nowrap;
-    padding: 16px 20px;
-  }
-  .customer-team {
-    flex-direction: column;
-  }
-  .customer-team div {
-    width: 90%;
-    margin-bottom: 30px;
-    height: 60vh;
-  }
-  .semi-footer-section div h1 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 834px) {
-  .hero-paragraph h1 {
     width: 100%;
   }
   .hero-container {
     flex-direction: column;
   }
   .hero-icon-contact {
-    position: absolute;
-    top: 32rem;
-  }
-  .hero-container button {
-    margin-bottom: 120px;
+    flex-direction: column;
   }
   .hero-container div img {
     width: 80%;
     margin-left: 70px;
-    margin-top: 90px;
+    margin-top: -40px;
   }
   .services-section {
     margin-top: -95px;
@@ -830,11 +754,14 @@
   .about-us-section div {
     width: 80%;
   }
+  .about-us-section div h1 {
+    font-size: 28px;
+  }
   .about-us-section div img:nth-of-type(1) {
-    width: 85vh;
+    width: 70%;
   }
   .about-us-section div img:nth-of-type(2) {
-    width: 80%;
+    width: 75%;
   }
   .about-us-icons div span {
     width: 55px;
@@ -843,28 +770,75 @@
     padding: 15px 25px;
     margin-bottom: 60px;
   }
-  .images-displayed {
+  .painting-images {
     flex-direction: column;
+  }
+  .painting-services h1 {
+    width: 90%;
+  }
+  .painting-images div {
+    width: 80%;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+  .painting-images div:nth-of-type(2) {
+    margin-top: -5px;
+  }
+  .painting-images div:nth-of-type(3) {
+    margin-top: 10px;
+  }
+  .images-heading {
+    width: 80%;
+    margin: auto;
+  }
+  .images-heading div h1 {
+    font-size: 32px;
+  }
+  .images-heading div button {
+    white-space: nowrap;
+    padding: 16px 20px;
+  }
+    .images-displayed {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 90%;
   }
   .images-displayed div img:nth-of-type(1) {
     width: 90%;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   .images-displayed div img:nth-of-type(2) {
     width: 90%;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   .images-displayed div img:nth-of-type(3) {
     width: 90%;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   .images-displayed div img:nth-of-type(4) {
     width: 90%;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   .images-displayed div img:nth-of-type(5) {
     width: 90%;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
+  }
+  .customer-section {
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .customer-team {
+    flex-direction: column;
+  }
+  .customer-team div {
+    width: 90%;
+    margin-bottom: 30px;
+    height: 23rem;
+  }
+  .semi-footer-section div h1 {
+    font-size: 30px;
   }
   .footer-section {
     height: 55vh;
@@ -878,68 +852,14 @@
   }
 }
 
-@media (max-width: 768px) {
-  .narbar-icon {
-    margin-right: 60px;
-  }
-  .hero-paragraph h1 {
-    font-size: 28px;
-  }
-  .services-first-heading h1 {
-    font-size: 22px;
-  }
-  .about-us-section div img:nth-of-type(1) {
-    width: 90%;
-    margin-right: 10px;
-  } 
-  .about-us-icons div span {
-    width: 65px;
-  }
-  .painting-services h1 {
-    font-size: 25px;
-  }
-  .customer-team div {
-    margin-bottom: 40px;
-    height: 85vh;
-  }
-  .images-displayed div img:nth-of-type(1) {
-    height: 65vh;
-    width: 80%;
-  }
-  .images-displayed div img:nth-of-type(2) {
-    height: 65vh;
-    width: 80%;
-  }
-  .images-displayed div img:nth-of-type(3) {
-    height: 65vh;
-    width: 80%;
-  }
-  .images-displayed div img:nth-of-type(4) {
-    height: 65vh;
-    width: 80%;
-  }
-  .images-displayed div img:nth-of-type(5) {
-    height: 65vh;
-    width: 80%;
-  }
-  .painting-images div {
-    height: 115vh;
-  }
-  .semi-footer-section div {
-    padding-top: 4rem; 
-  }
-}
-
 @media (max-width: 480px) {
-  .narbar-icon {
-    margin-right: 80px;
-  }
   .hero-paragraph {
     width: 90%;
     margin-left: 0;
-  }
-  .hero-paragraph{
     margin-bottom: 3rem;
+  }
+  .hero-paragraph h1 {
+    font-size: 28px;
   }
   .hero-container div img {
     width: 90%;
@@ -952,7 +872,7 @@
     margin-bottom: 30px;
   }
   .services-first-heading h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .about-us-section div {
     width: 90%;
@@ -995,12 +915,9 @@
   }
   .painting-images div {
     margin-right: 50px;
-    margin-top: -13px;
-    height: 50vh;
   }
   .images-heading {
     flex-direction: column;
-    margin-top: -25px;
   }
   .images-heading div h1 {
     font-size: 25px;
@@ -1009,11 +926,6 @@
   }
   .images-heading div button {
     margin-bottom: 50px;
-    margin-left: -30px;
-    padding: 14px 20px;
-  }
-  .images-displayed {
-    margin-left: 70px;
   }
   .images-displayed div img:nth-of-type(1) {
     height: 35vh;
@@ -1030,39 +942,20 @@
   .images-displayed div img:nth-of-type(5) {
     height: 35vh
   }
-  .customer-section {
-    padding-bottom: 60px;
-  }
-  .customer-heading {
-    margin-top: -30px;
-  }
   .customer-heading h1 {
     font-size: 25px;
   }
   .customer-team div {
     width: 100%;
-    height: 55vh;
+    height: 45vh;
   }
-  .semi-footer-section {
+  .semi-footer-section div{
    height: 50vh;
-  }
-  .semi-footer-section div {
-    padding-top: 5rem;
-  }
-  .semi-footer-section div h1 {
-    font-size: 25px;
-    width: 80%;
-  }
-  .semi-footer-section div button {
-    padding: 12px 20px;
   }
   .footer-section {
     height: 45vh;
   }
 }
 
-@media (max-width: 390px) {
-
-}
 
 
